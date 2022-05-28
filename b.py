@@ -17,7 +17,9 @@ def serch_index(sorted_array, target_number):
     
     # 左と右側のポインタが交差するまで続ける
     while left <= right:
+        # 真ん中の値を定義。
         mid = (left + right) // 2
+
         if sorted_array[mid] == target_number:
             return mid
         if sorted_array[mid] < target_number:
